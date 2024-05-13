@@ -1,0 +1,210 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Banner styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url(images/darker\ woodenBG.jpeg);
+}
+
+.banner h1 {
+    font-size: 24px;
+}
+
+/* Class Display and Top Sheet styles */
+#classDisplay {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.topSheet {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.moveContainer {
+    white-space: nowrap;
+}
+
+.charsheet {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Container and Choices Layout */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(images/woodenBG.jpeg);
+    height:auto;
+}
+
+.choices {
+    float: left;
+    width:auto;
+    
+}
+
+.btnsDisp {
+    float: right;
+    max-width: 250px;
+}
+
+.choices, .btnsDisp {
+    height: 20em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.btnDispItem {
+    margin: 4px;
+    margin-top:12px;
+}
+
+#pointsDisp {
+    width: 30px;
+    background-color: #f2f2f2;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Selectors and Buttons */
+select {
+    width: 14em;
+    text-align: center;
+}
+
+.select {
+    padding: 5px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    color: #444;
+    appearance: none;
+    width: auto;
+    cursor: pointer;
+}
+
+.select:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: #bbb;
+}
+
+/* Regiment Choices and Stats */
+.regChoices, .regimentBox {
+    margin: 15px;
+}
+
+.regimentStats {
+    background-color: lightgray;
+    overflow-y: auto;
+    max-height: 17em;
+    margin-top: 5px;
+}
+
+.regChoices, .regimentStats {
+    width: 500px;
+}
+
+.regimentBox {
+    margin: 5px;
+}
+
+#characterSheet {
+    margin: 20px auto;
+    max-width: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Movement, Skills, and Content Box */
+.moveDisp, .skillsheet, .regAddition {
+    display: inline-block;
+    width: 120px; /* Adjust width to fit */
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+}
+
+.regAddition {
+    color: red;
+}
+
+.contentBox {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    background-image: url(images/woodenBG.jpeg);
+}
+
+.skillBox, .traitsBox, .equiptmentBox {
+    min-height: 200px;
+    margin: auto;
+    width: auto;
+    max-width: 400px;
+    height: 400px;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: lightgrey;
+    border: solid;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1100px) {
+    .container, .contentBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentBox {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .moveDisp {
+        width: 50px;
+    }
+}
+
+/* Miscellaneous Styles */
+.red {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
